@@ -1,0 +1,114 @@
+.product {
+    padding: 2.0rem 2.4rem 4.4rem 2.4rem;
+
+    .company-name {
+        text-transform: uppercase;
+        font-size: 1.2rem;
+        font-weight: 200;
+        color: $Orange;
+        letter-spacing: 0.10rem;
+    }
+
+    .title {
+        color: $Very-dark-blue;
+        font-size: 2.8rem;
+        font-weight: 700;
+        margin-top: 1.3rem;
+        line-height: 118%;
+    }
+
+    .description {
+        font-size: 1.5rem;
+        color: $Dark-grayish-blue;
+        line-height: 165%;
+        margin-top: 1.6rem;
+    }
+
+    .price-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 2rem;
+
+        .group {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+
+            .price {
+                font-size: 3rem;
+                font-weight: 700;
+            }
+
+            .discount {
+                font-size: 1.5rem;
+                font-weight: 700;
+                color: $Orange;
+                background-color: $Paleorange;
+                margin-left: 1.4rem;
+                padding: 0.5rem 1rem;
+                border-radius: 0.5rem;
+            }
+        }
+
+        .old-price {
+            color: $Grayish-blue;
+            font-size: 1.2rem;
+            font-weight: 700;
+            text-decoration: line-through;
+        }
+    }
+
+    .counter-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: $Light-grayish-blue;
+        padding: 2.0rem 2.4rem;
+        margin-top: 2rem;
+        border-radius: 1rem;
+
+        .counter {
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+
+        #btnMinus, #btnPlus {
+            cursor: pointer;
+            padding: 1rem;
+            border-radius: 0.5rem;
+
+            &:hover {
+                opacity: 0.5;
+                background-color: $Paleorange;
+            }
+        }
+    }
+
+    .btn {
+        background-color: $Orange;
+        color: $White;
+
+        margin-top: 1.5rem;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+
+        font-size: 1.55rem;
+        font-weight: 700;
+        border-radius: 1.5rem;
+
+        padding: 1.9rem;
+
+        img {
+            height: 1.5rem;
+            filter: brightness(300%);
+        }
+
+        box-shadow: 0px 20px 30px 0px $Paleorange;
+        cursor: pointer;
+    }
+
+}
